@@ -12,21 +12,21 @@
     <title>Dọn dẹp tài nguyên :: Nhận thông báo chi tiêu cho hoạt động mua sắp tại Shopee</title>
 
     
-    <link href="../../css/nucleus.css?1720928696" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1720928696" rel="stylesheet">
-    <link href="../../css/hybrid.css?1720928696" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1720928696" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1720928696" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1720928696" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1720928696" rel="stylesheet">
-    <link href="../../css/theme.css?1720928696" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1720928696" rel="stylesheet">
+    <link href="../../css/nucleus.css?1721013660" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1721013660" rel="stylesheet">
+    <link href="../../css/hybrid.css?1721013660" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1721013660" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1721013660" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1721013660" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1721013660" rel="stylesheet">
+    <link href="../../css/theme.css?1721013660" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1721013660" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1720928696" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1721013660" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1720928696"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1721013660"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1720928696"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1720928696"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1721013660"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1721013660"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1720928696"></script>
+<script type="text/javascript" src="../../js/search.js?1721013660"></script>
 
     
   </div>
@@ -411,13 +411,13 @@
  
   
     
-    <li data-nav-id="/vi/4-/4.2/" title="Connect với webhook bằng postman" class="dd-item 
+    <li data-nav-id="/vi/4-/4.1/" title="Tạo API Gateway" class="dd-item 
         
         
         
         ">
-      <a href="../../vi/4-/4.2/">
-           <b> 4.2 </b> Connect với webhook bằng postman
+      <a href="../../vi/4-/4.1/">
+           <b> 4.1 </b> Tạo API Gateway
           
             <i class="fas fa-check read-icon"></i>
           
@@ -439,13 +439,13 @@
  
   
     
-    <li data-nav-id="/vi/4-/4.1/" title="Tạo API Gateway" class="dd-item 
+    <li data-nav-id="/vi/4-/4.2/" title="Connect với webhook bằng postman" class="dd-item 
         
         
         
         ">
-      <a href="../../vi/4-/4.1/">
-           <b> 4.1 </b> Tạo API Gateway
+      <a href="../../vi/4-/4.2/">
+           <b> 4.2 </b> Connect với webhook bằng postman
           
             <i class="fas fa-check read-icon"></i>
           
@@ -823,8 +823,9 @@
       <ul>
         <li></li>
         <li><a href="#xóa-s3-bucket">Xóa S3 Bucket</a></li>
-        <li><a href="#xóa-shedule-eventbridge">Xóa shedule EventBridge</a></li>
         <li><a href="#xóa-lambda-function">Xóa Lambda function</a></li>
+        <li><a href="#xóa-api-gateway">Xóa API Gateway</a></li>
+        <li><a href="#xóa-bảng-dynamodb">Xóa bảng DynamoDB</a></li>
       </ul>
     </li>
   </ul>
@@ -853,14 +854,16 @@
 
 
 	<h4 id="dọn-dẹp-tài-nguyên">Dọn dẹp tài nguyên</h4>
-<p>Trong bài lab này chúng ta đã sử dụng các dịch vụ S3, Lambda Function, EventBridge. Các dịch vụ này đều có chi phí khá là rẻ và free cho tài khoản 12 tháng nên ko cần phải xóa tài nguyên.</p>
+<p>Trong bài lab này chúng ta đã sử dụng các dịch vụ S3, Lambda Function, DynamoDB, API Gateway. Các dịch vụ này đều có chi phí khá là rẻ và free cho tài khoản 12 tháng nên ko cần phải xóa tài nguyên.</p>
 <p>Nếu vẫn muốn xóa thì đây là lần lượt các bước:</p>
 <h3 id="xóa-s3-bucket">Xóa S3 Bucket</h3>
 <p>Vào S3 chọn bucket và chọn <strong>workshoph</strong> và chọn Empty. sau đó chọn <strong>Delete</strong> làm theo các hiển thị tiếp theo để xóa.</p>
-<h3 id="xóa-shedule-eventbridge">Xóa shedule EventBridge</h3>
-<p>Vào EventBridge chọn shedule và chọn <strong>send-email</strong> và chọn <strong>Delete</strong>.</p>
 <h3 id="xóa-lambda-function">Xóa Lambda function</h3>
-<p>Vào Lambda function chọn function chọn <strong>Crawl_data</strong> và chọn <strong>Actions</strong> chọn <strong>Delete</strong> để xóa.</p>
+<p>Vào Lambda function chọn function chọn <strong>BotTele</strong> và chọn <strong>Actions</strong> chọn <strong>Delete</strong> để xóa.</p>
+<h3 id="xóa-api-gateway">Xóa API Gateway</h3>
+<p>Vào API Gateway tìm API vừa tạo chọn <strong>Delete</strong></p>
+<h3 id="xóa-bảng-dynamodb">Xóa bảng DynamoDB</h3>
+<p>Vào DynamoDB chọn <strong>Table</strong> và chọn bảng <strong>Spend-me</strong> chọn <strong>Delete</strong> làm theo các hiển thị để xóa.</p>
 
 
 
@@ -1250,19 +1253,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1720928696"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1720928696"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1720928696"></script>
-    <script src="../../js/jquery.sticky.js?1720928696"></script>
-    <script src="../../js/featherlight.min.js?1720928696"></script>
-    <script src="../../js/highlight.pack.js?1720928696"></script>
+    <script src="../../js/clipboard.min.js?1721013660"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1721013660"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1721013660"></script>
+    <script src="../../js/jquery.sticky.js?1721013660"></script>
+    <script src="../../js/featherlight.min.js?1721013660"></script>
+    <script src="../../js/highlight.pack.js?1721013660"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1720928696"></script>
-    <script src="../../js/learn.js?1720928696"></script>
-    <script src="../../js/hugo-learn.js?1720928696"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1721013660"></script>
+    <script src="../../js/learn.js?1721013660"></script>
+    <script src="../../js/hugo-learn.js?1721013660"></script>
 
-    <link href="../../mermaid/mermaid.css?1720928696" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1720928696"></script>
+    <link href="../../mermaid/mermaid.css?1721013660" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1721013660"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
