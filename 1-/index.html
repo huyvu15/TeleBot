@@ -12,21 +12,21 @@
     <title>Giới thiệu :: Start with Amazon VPC and AWS VPN Site-to-Site.</title>
 
     
-    <link href="../css/nucleus.css?1721013660" rel="stylesheet">
-    <link href="../css/fontawesome-all.min.css?1721013660" rel="stylesheet">
-    <link href="../css/hybrid.css?1721013660" rel="stylesheet">
-    <link href="../css/featherlight.min.css?1721013660" rel="stylesheet">
-    <link href="../css/perfect-scrollbar.min.css?1721013660" rel="stylesheet">
-    <link href="../css/auto-complete.css?1721013660" rel="stylesheet">
-    <link href="../css/atom-one-dark-reasonable.css?1721013660" rel="stylesheet">
-    <link href="../css/theme.css?1721013660" rel="stylesheet">
-    <link href="../css/hugo-theme.css?1721013660" rel="stylesheet">
+    <link href="../css/nucleus.css?1721017306" rel="stylesheet">
+    <link href="../css/fontawesome-all.min.css?1721017306" rel="stylesheet">
+    <link href="../css/hybrid.css?1721017306" rel="stylesheet">
+    <link href="../css/featherlight.min.css?1721017306" rel="stylesheet">
+    <link href="../css/perfect-scrollbar.min.css?1721017306" rel="stylesheet">
+    <link href="../css/auto-complete.css?1721017306" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1721017306" rel="stylesheet">
+    <link href="../css/theme.css?1721017306" rel="stylesheet">
+    <link href="../css/hugo-theme.css?1721017306" rel="stylesheet">
     
-    <link href="../css/theme-workshop.css?1721013660" rel="stylesheet">
+    <link href="../css/theme-workshop.css?1721017306" rel="stylesheet">
     
     
 
-    <script src="../js/jquery-3.3.1.min.js?1721013660"></script>
+    <script src="../js/jquery-3.3.1.min.js?1721017306"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../js/lunr.min.js?1721013660"></script>
-<script type="text/javascript" src="../js/auto-complete.js?1721013660"></script>
+<script type="text/javascript" src="../js/lunr.min.js?1721017306"></script>
+<script type="text/javascript" src="../js/auto-complete.js?1721017306"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="../js/search.js?1721013660"></script>
+<script type="text/javascript" src="../js/search.js?1721017306"></script>
 
     
   </div>
@@ -851,7 +851,7 @@
 
 	<h1 id="tạo-chatbot-quản-lý-chi-tiêu-qua-telegram">Tạo ChatBot Quản lý chi tiêu qua Telegram</h1>
 <h4 id="tổng-quan">Tổng quan</h4>
-<p>Dạo gần đây với sự nổi lên của các chatbot thông minh như OpenAI, Claude, Bing, &hellip; Vì vậy mình cũng muốn tạo ra một con chatbot đơn giản của riêng bản thân. Trong workshop này, bạn sẽ học cách thiết kế và lập trình một chatbot trên Telegram, giúp bạn tiện lợi theo dõi và quản lý chi tiêu cá nhân mà không cần đăng nhập.</p>
+<p>Dạo gần đây với sự nổi lên của các chatbot thông minh như OpenAI, Claude, Bing,&hellip; với những tính năng vô cùng mạnh mẽ. Vì vậy mình cũng muốn tạo ra một con chatbot đơn giản của riêng bản thân. Trong workshop này, bạn sẽ học cách thiết kế và lập trình một chatbot trên Telegram, giúp bạn tiện lợi theo dõi và quản lý chi tiêu cá nhân mà không cần đăng nhập.</p>
 <p>Telegram là một ứng dụng nhắn tin phổ biến, mạnh mẽ và là lựa chọn lý tưởng để phát triển chatbot quản lý chi tiêu.</p>
 <h4 id="các-service-sử-dụng">Các Service sử dụng:</h4>
 <p><strong>1. AWS Lambda Function:</strong> là dịch vụ điện toán phi máy chủ (serverless) do Amazon cung cấp, cho phép bạn chạy các đoạn mã mà không cần quản lý máy chủ. Với Lambda, bạn chỉ cần tải lên mã của mình và AWS sẽ lo phần còn lại, bao gồm việc cung cấp tài nguyên máy tính và tự động scale mã của bạn dựa trên nhu cầu.</p>
@@ -861,7 +861,7 @@
 <p>Workshop sẽ tập trung vào các tính năng đơn giản, dễ thực hiện. Người dùng có thể phát triển thêm các tính năng khác dựa trên nhu cầu cá nhân.</p>
 <p>Ngôn ngữ chính để phục vụ workshop này là python 3.10</p>
 <h4 id="ý-tưởng">Ý tưởng:</h4>
-<p>Viết một API Gateway để kết nối với telegram thông qua webhook. API đó được gắn với một lambda function có nhiệm vụ đọc và ghi dữ liệu, truy vấn kết quả truy vấn đến dynamodb. Tùy vào mục đích sử dụng ta có thể sáng tạo công dụng của chatbot theo ý muốn:</p>
+<p>Viết một API Gateway để kết nối với telegram và kích hoạt thông qua webhook. API đó được gắn với một lambda function có nhiệm vụ đọc và ghi dữ liệu, truy vấn kết quả truy vấn đến dynamodb. Tùy vào mục đích sử dụng ta có thể sáng tạo công dụng của chatbot theo ý muốn:</p>
 <p>Một số những thống kê có thể kể đến:</p>
 <ul>
 <li>
@@ -1279,19 +1279,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../js/clipboard.min.js?1721013660"></script>
-    <script src="../js/perfect-scrollbar.min.js?1721013660"></script>
-    <script src="../js/perfect-scrollbar.jquery.min.js?1721013660"></script>
-    <script src="../js/jquery.sticky.js?1721013660"></script>
-    <script src="../js/featherlight.min.js?1721013660"></script>
-    <script src="../js/highlight.pack.js?1721013660"></script>
+    <script src="../js/clipboard.min.js?1721017306"></script>
+    <script src="../js/perfect-scrollbar.min.js?1721017306"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js?1721017306"></script>
+    <script src="../js/jquery.sticky.js?1721017306"></script>
+    <script src="../js/featherlight.min.js?1721017306"></script>
+    <script src="../js/highlight.pack.js?1721017306"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../js/modernizr.custom-3.6.0.js?1721013660"></script>
-    <script src="../js/learn.js?1721013660"></script>
-    <script src="../js/hugo-learn.js?1721013660"></script>
+    <script src="../js/modernizr.custom-3.6.0.js?1721017306"></script>
+    <script src="../js/learn.js?1721017306"></script>
+    <script src="../js/hugo-learn.js?1721017306"></script>
 
-    <link href="../mermaid/mermaid.css?1721013660" rel="stylesheet" />
-    <script src="../mermaid/mermaid.js?1721013660"></script>
+    <link href="../mermaid/mermaid.css?1721017306" rel="stylesheet" />
+    <script src="../mermaid/mermaid.js?1721017306"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

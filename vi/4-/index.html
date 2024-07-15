@@ -9,24 +9,24 @@
 
     <link rel="icon" href="../../images/favicon.png" type="image/png">
 
-    <title>Lấy cookie từ shopee :: Nhận thông báo chi tiêu cho hoạt động mua sắp tại Shopee</title>
+    <title>Tạo API Gateway :: Nhận thông báo chi tiêu cho hoạt động mua sắp tại Shopee</title>
 
     
-    <link href="../../css/nucleus.css?1721013660" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1721013660" rel="stylesheet">
-    <link href="../../css/hybrid.css?1721013660" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1721013660" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1721013660" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1721013660" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1721013660" rel="stylesheet">
-    <link href="../../css/theme.css?1721013660" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1721013660" rel="stylesheet">
+    <link href="../../css/nucleus.css?1721017306" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1721017306" rel="stylesheet">
+    <link href="../../css/hybrid.css?1721017306" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1721017306" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1721017306" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1721017306" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1721017306" rel="stylesheet">
+    <link href="../../css/theme.css?1721017306" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1721017306" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1721013660" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1721017306" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1721013660"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1721017306"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1721013660"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1721013660"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1721017306"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1721017306"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1721013660"></script>
+<script type="text/javascript" src="../../js/search.js?1721017306"></script>
 
     
   </div>
@@ -380,13 +380,13 @@
  
   
     
-    <li data-nav-id="/vi/4-/" title="Lấy cookie từ shopee" class="dd-item 
+    <li data-nav-id="/vi/4-/" title="Tạo API Gateway" class="dd-item 
         
         active
         
         ">
       <a href="../../vi/4-/">
-           <b> 4. </b> Lấy cookie từ shopee
+           <b> 4. </b> Tạo API Gateway
           
             <i class="fas fa-check read-icon"></i>
           
@@ -806,7 +806,7 @@
             
           
           
-            <a href='../../vi/'>Tạo ChatBot Quản lý chi tiêu qua Telegram</a> > Lấy cookie từ shopee
+            <a href='../../vi/'>Tạo ChatBot Quản lý chi tiêu qua Telegram</a> > Tạo API Gateway
           
         
           
@@ -841,7 +841,7 @@
           
             <h1>
               
-              Lấy cookie từ shopee
+              Tạo API Gateway
             </h1>
           
 
@@ -849,55 +849,17 @@
 
 
 
-	<h4 id="lấy-cookie-từ-shopee">Lấy cookie từ shopee</h4>
-<p>Ở bước này chúng ta sẽ thực hiện lấy cookie từ shopee</p>
+	<h4 id="tạo-api-gateway">Tạo API Gateway</h4>
+<p>Tại bước này ta sẽ phải tạo một API và kết nối với một lambda function để thực hiện các nhiệm vụ được setting trước.</p>
 <ol>
-<li>Truy cập vào <strong><code>Shopee.com</code></strong>
-<ul>
-<li>Chọn <strong>Đơn mua</strong>.</li>
-</ul>
-</li>
+<li>Tại giao diện console tìm <strong>API Gateway</strong></li>
 </ol>
-<p><img alt="Create VPC" src="../../images/4-CreateEc2Server/2.png?featherlight=false&width=90pc"></p>
-<ol start="2">
-<li>Tại giao diện Đơn hàng
-<ul>
-<li>Click chuột phải chọn <strong>inspect</strong> .</li>
-</ul>
-</li>
-</ol>
-<p><img alt="Create VPC" src="../../images/4-CreateEc2Server/3.png?featherlight=false&width=90pc"></p>
-<ol start="3">
-<li>Tại giao diện backend
-<ul>
-<li>Click vào <strong>Network</strong> .</li>
-<li>Loading lại trang kém xuống tìm <strong>get_all_order_and_checkout_list?limit=5&amp;offset=0</strong></li>
-<li>Di chuột vào phần copy. Chọn <strong>Copy all as cURL(bash)</strong></li>
-</ul>
-</li>
-</ol>
-<p><img alt="Create VPC" src="../../images/4-CreateEc2Server/4.png?featherlight=false&width=90pc"></p>
-<ol start="4">
-<li>Mở tab mới và vào link: <strong><code>https://curlconverter.com/</code></strong>
-<ul>
-<li>Dán phần vừa copy vào <strong>curl command</strong> .</li>
-<li>Tiếp tục <strong>copy</strong> phần trả về phía dưới.</li>
-</ul>
-</li>
-</ol>
-<p><img alt="Create VPC" src="../../images/4-CreateEc2Server/5.png?featherlight=false&width=90pc"></p>
-
-<div class="notices tip" ><p>Một điểm đáng chú ý nữa là thi thoảng web bị lỗi trong trường hợp copy nhiều lần thì cái trả về sẽ sinh ra nhiều code và liên tục bị trồng lên nhau. Nếu gặp trường hợp như vậy thì chỉ nên <strong>copy</strong> từ phần <strong>import</strong> đến hết <strong>respon()</strong>.</p>
-</div>
-
+<p><img alt="Create VPC" src="../../images/4-API/4.1-API/1.png?featherlight=false&width=90pc"></p>
 <h4 id="nội-dung">Nội dung</h4>
 <ol>
-<li><a href="4.1-createec2/">Lấy mật khẩu ứng dụng Gmail</a></li>
-<li><a href="4.2-connectec2/">Trích xuất thông tin file json</a></li>
-<li><a href="4.3-natgateway/">Thêm code vào Lambda Function</a></li>
+<li><a href="../../vi/4-/4.1/">Tạo API Gateway</a></li>
+<li><a href="../../vi/4-/4.2/">Kết nối với webhook bằng postman</a></li>
 </ol>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
 
 
 
@@ -1290,19 +1252,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1721013660"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1721013660"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1721013660"></script>
-    <script src="../../js/jquery.sticky.js?1721013660"></script>
-    <script src="../../js/featherlight.min.js?1721013660"></script>
-    <script src="../../js/highlight.pack.js?1721013660"></script>
+    <script src="../../js/clipboard.min.js?1721017306"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1721017306"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1721017306"></script>
+    <script src="../../js/jquery.sticky.js?1721017306"></script>
+    <script src="../../js/featherlight.min.js?1721017306"></script>
+    <script src="../../js/highlight.pack.js?1721017306"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1721013660"></script>
-    <script src="../../js/learn.js?1721013660"></script>
-    <script src="../../js/hugo-learn.js?1721013660"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1721017306"></script>
+    <script src="../../js/learn.js?1721017306"></script>
+    <script src="../../js/hugo-learn.js?1721017306"></script>
 
-    <link href="../../mermaid/mermaid.css?1721013660" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1721013660"></script>
+    <link href="../../mermaid/mermaid.css?1721017306" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1721017306"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
